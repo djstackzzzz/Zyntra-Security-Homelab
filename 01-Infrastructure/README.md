@@ -277,7 +277,6 @@ klist
 - Windows enterprise security administration
 - PowerShell security diagnostics
 
-
 ## Lessons Learned
 
 Building an enterprise infrastructure from scratch provided practical experience in managing system dependencies, allocating hardware resources, troubleshooting connectivity, and integrating on-premises services with cloud identity platforms.

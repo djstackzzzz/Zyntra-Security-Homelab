@@ -72,12 +72,16 @@ The objective of this homelab is to develop practical enterprise infrastructure 
 
 All security testing is conducted within an authorized and isolated homelab environment. Sensitive information is sanitized before publication.
 
-## Project Status
+## Project Status: Actively Developing
 
-Actively developing and expanding.
+Zyntra Security Homelab is an ongoing enterprise infrastructure and cybersecurity project designed to demonstrate practical experience in system administration, identity and access management, network security, security operations, and hybrid cloud environments.
+
+This repository is continuously updated with new implementations, technical documentation, security assessments, troubleshooting case studies, and automation scripts.
+
+All security testing is conducted within an authorized and isolated laboratory environment.
 
 ## Author
 
-**DJ Sissoko**
+**Djengui Sissoko**
 
 IT Infrastructure | Cybersecurity | Identity and Access Management | Security Operations
