@@ -1,0 +1,33 @@
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.p12
+*credentials*
+*passwords*
+*secrets*
+
+# Virtual machines and backups
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.ova
+*.ovf
+*.iso
+*.bak
+
+# Raw logs and network captures
+*.log
+*.evtx
+*.pcap
+*.pcapng
+
+# Local configuration
+.vscode/
+__pycache__/
+Thumbs.db
+.DS_Store
