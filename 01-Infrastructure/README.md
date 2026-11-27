@@ -200,6 +200,83 @@ Test-NetConnection dc01.cyberlab.local -Port 389
 - PowerShell network administration
 - Enterprise infrastructure troubleshooting
 
+### 7. Domain Trust and Secure Channel Verification
+
+Validated the secure communication channel between the Windows 11 workstation and the Windows Server 2025 Active Directory domain controller.
+
+#### Implementation Evidence
+
+![Domain Trust Verification](screenshots/09-domain-trust-verification.png)
+
+#### PowerShell Verification
+
+```powershell
+Test-ComputerSecureChannel -Verbose
+nltest /sc_query:cyberlab.local
+nltest /dsgetdc:cyberlab.local
+```
+
+#### Verification Results
+
+| Test | Result |
+|---|---|
+| Secure Channel | True |
+| Domain Trust Relationship | Healthy |
+| Domain Controller Discovery | Successful |
+| Authentication Service | Netlogon |
+| Trusted DC Connection | NERR_Success |
+
+#### Technical Skills Demonstrated
+
+- Active Directory trust validation
+- Secure channel verification
+- Domain controller discovery
+- Netlogon administration
+- Enterprise infrastructure troubleshooting
+- PowerShell diagnostics
+
+For details about the secure channel failure and recovery, see the [Troubleshooting Documentation](../11-Troubleshooting/README.md).
+
+---
+
+### 8. Kerberos Authentication Verification
+
+Validated centralized domain authentication using Kerberos within the Active Directory environment. Verified the authenticated domain identity, logon server, cached Kerberos tickets, and ticket encryption.
+
+#### Implementation Evidence
+
+![Kerberos Authentication Verification](screenshots/10-kerberos-authentication.png)
+
+#### PowerShell Verification
+
+```powershell
+whoami
+$env:LOGONSERVER
+klist
+```
+
+#### Verification Results
+
+| Test | Result |
+|---|---|
+| Domain User Authentication | Successful |
+| Logon Server | DC01 |
+| Authentication Protocol | Kerberos |
+| Cached Kerberos Tickets | 6 |
+| Ticket Granting Ticket (TGT) | Present |
+| Ticket Encryption | AES-256-CTS-HMAC-SHA1-96 |
+| Key Distribution Center (KDC) | DC01 |
+
+#### Technical Skills Demonstrated
+
+- Kerberos authentication
+- Centralized identity management
+- Ticket Granting Ticket verification
+- Authentication encryption analysis
+- Active Directory authentication services
+- Windows enterprise security administration
+- PowerShell security diagnostics
+
 
 ## Lessons Learned
 
