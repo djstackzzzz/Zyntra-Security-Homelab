@@ -262,7 +262,7 @@ klist
 | Domain User Authentication | Successful |
 | Logon Server | DC01 |
 | Authentication Protocol | Kerberos |
-| Cached Kerberos Tickets | 6 |
+| Cached Kerberos Tickets | 2 |
 | Ticket Granting Ticket (TGT) | Present |
 | Ticket Encryption | AES-256-CTS-HMAC-SHA1-96 |
 | Key Distribution Center (KDC) | DC01 |
